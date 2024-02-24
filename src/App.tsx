@@ -1,34 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Flex, Box, Blockquote, Container, Code, Callout } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Container size="4">
+        <Flex gap="9">
+            <Box height="auto">
+              <Box pt="4">
+                <Blockquote >
+                  Perfect typography is certainly the most elusive of all arts. Sculpture in
+                  stone alone comes near it in obstinacy.
+                </Blockquote>
+                <Box pt="4">
+                  <Code>console.log()</Code>
+                </Box>
+              </Box>
+            </Box>
+            <Box height="auto">
+              <Box pt="4">
+                <Blockquote >
+                  Perfect typography is certainly the most elusive of all arts. Sculpture in
+                  stone alone comes near it in obstinacy.
+                </Blockquote>
+                <Box pt="4">
+                  <Code>console.log()</Code>
+                </Box>
+              </Box>
+            </Box>
+            <Box height="auto">
+              <Box pt="4">
+                <Blockquote >
+                  Perfect typography is certainly the most elusive of all arts. Sculpture in
+                  stone alone comes near it in obstinacy.
+                </Blockquote>
+                <Box pt="4">
+                  <Code>console.log()</Code>
+                </Box>
+              </Box>
+            </Box>
+        </Flex>
+        <Box pt="8">
+          <Callout.Root>
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              You will need admin privileges to install and access this application.
+            </Callout.Text>
+          </Callout.Root>
+        </Box>
+      </Container>
+    </div>
   )
 }
 
