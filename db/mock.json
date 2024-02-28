@@ -1,0 +1,39 @@
+    {
+        "headsets" : [
+            {
+                "id" : 1,
+                "title" : "Sony WH1000XM4",
+                "price" : 199,
+                "rating" : 4.5,
+                "image" : "https://store.sony.com.au/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw4f020a43/images/WH1000XM4B/WH1000XM4B.png"
+            },
+            {
+                "id" : 2,
+                "title" : "Sony WH1000XM5",
+                "price" : 275,
+                "rating" : 4.8,
+                "image" : "https://store.sony.co.nz/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw2e089ba5/images/WH1000XM5S/WH1000XM5S.png"
+            },
+            {
+                "id" : 3,
+                "title" : "Apple Airpods Max",
+                "price" : 549,
+                "rating" : 4.9,
+                "image" : "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/en_US/b9f519195f84950573eea5088a49b964.png"
+            },
+            {
+                "id" : 4,
+                "title" : "Logitech G-PRO X2",
+                "price" : 409,
+                "rating" : 4.5,
+                "image" : "https://resource.logitech.com/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-white.png"
+            },
+            {
+                "id" : 5,
+                "title" : "Razer Kraken",
+                "price" : 329,
+                "rating" : 4.3,
+                "image" : "https://static.razer.ru/landings/razer-kraken/razer-kraken-compare-slider-01-new.png"
+            }
+        ]
+    }
