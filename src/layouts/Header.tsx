@@ -4,7 +4,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 left-0 right-0 w-full h-[100px] flex justify-between items-center border bg-primary border-gray-400/30">
+    <header className="sticky top-0 left-0 z-10 right-0 w-full h-[100px] flex justify-between items-center border bg-primary border-gray-400/30">
         <div className="siteContainer flex justify-between items-center">
           <div className="w-[50px]">
               <img className="w-full h-full" src={logo} alt="" />

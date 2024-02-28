@@ -20,7 +20,7 @@ const Products : React.FC = () => {
   return (
     <section className='w-full flex items-center justify-center py-[100px]'>
         <div className="siteContainer">
-            <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
                 {
                     products.map((product ,key) => (
                         <Card key={key} product={product} />
