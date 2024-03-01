@@ -1,17 +1,15 @@
 import { LuShoppingBasket } from "react-icons/lu";
+import React from "react";
+import { Product } from "@/types/product";
 
-type prodProps = {
-  product : {
-    id: number,
-    title : string,
-    price : number,
-    image? : string,
-  }[]
 
-}
-const Card = ({product} : prodProps) => {
+type CardProps = {
+  product: Product;
+};
+
+const Card : React.FC<CardProps> = ({product}) => {
   return (
-    <div className='border border-gray-400/30 rounded-md group text-white shadow-lg p-5 overflow-hidden relative'>
+    <div className='border border-gray-400/50 text-white rounded-md group shadow-lg p-5 overflow-hidden relative'>
         <div className='w-[300px] h-[250px] mx-auto flex items-center justify-center'>
             <img className="w-full h-full object-contain group-hover:scale-110 transition-all duration-300" src={product.image} alt="" />
         </div>
