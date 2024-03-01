@@ -1,13 +1,16 @@
 import React from "react";
-import Header from "@/layouts/Header";
-import Products from "./layouts/Products";
+import { Route, Routes } from "react-router-dom";
+import Home from "./views/Home";
+import Detail from "./views/Detail";
+import Favorites from "./views/Favorites";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Header />
-      <Products />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/favorites" element={<Favorites />} />
+      <Route path="/:id" element={<Detail />} />
+    </Routes>
   )
 }
 

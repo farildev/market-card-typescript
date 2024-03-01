@@ -1,5 +1,6 @@
-import { LuShoppingBasket } from "react-icons/lu";
 import React from "react";
+import { LuShoppingBasket } from "react-icons/lu";
+import { IoMdHeartEmpty } from "react-icons/io";
 import { Product } from "@/types/product";
 
 
@@ -18,8 +19,12 @@ const Card : React.FC<CardProps> = ({product}) => {
             <span className='text-4xl font-bold'>{product?.price.toFixed(0)}$</span>
             <div className="w-full flex items-center justify-between">
               <button className='bg-main w-[65%] p-2 rounded-md font-semibold'>Buy</button>
-              <button className="bg-white text-2xl text-black p-2 rounded-md"><LuShoppingBasket /></button>
+              <div className="flex flex-row gap-2">
+                <button className="bg-white text-2xl text-black p-2 rounded-md"><IoMdHeartEmpty /></button>
+                <button className="bg-white text-2xl text-black p-2 rounded-md"><LuShoppingBasket /></button>
+              </div>
             </div>
+            
         </div>
     </div>
   )
