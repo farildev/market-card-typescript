@@ -5,13 +5,16 @@ import "./assets/styles/globals.css";
 import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
 import { BrowserRouter } from 'react-router-dom';
+import SidebarProvider from "@/context/SidebarContext.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Theme>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <SidebarProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </SidebarProvider>
     </Theme>
   </React.StrictMode>,
 )
